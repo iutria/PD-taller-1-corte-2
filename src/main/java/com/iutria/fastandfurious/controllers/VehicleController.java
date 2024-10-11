@@ -18,9 +18,4 @@ public class VehicleController {
         Automobile automobile = factoryAutomobile.createVehicle(automobileDTO);
         return automobile.getInfo();
     }
-
-    @PostMapping("/create2")
-    public AutomobileDTO post(@RequestBody AutomobileDTO automobileDTO) {
-        return automobileDTO;
-    }
 }
